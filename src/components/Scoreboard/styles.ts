@@ -8,6 +8,7 @@ export const Container = styled.div`
   border-radius: 8px;
   padding: 15px 0;
   margin-bottom: 50px;
+  width: 100%;
 `;
 
 export const Score = styled.p`

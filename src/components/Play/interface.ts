@@ -1,6 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-
-export type PlayType = "rock" | "paper" | "scissors" | undefined;
+import { PlayType } from "../../../types/types";
 
 export interface PlayProps {
   play?: PlayType;

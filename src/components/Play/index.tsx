@@ -1,6 +1,9 @@
 import React from "react";
 import { PlayProps } from "./interface";
 import * as S from "./styles";
+import PaperIcon from "../../../public/icons/paper.svg";
+import RockIcon from "../../../public/icons/rock.svg";
+import ScissorsIcon from "../../../public/icons/scissors.svg";
 
 const Play: React.FC<PlayProps> = ({
   play,
@@ -14,9 +17,9 @@ const Play: React.FC<PlayProps> = ({
   };
 
   const plays = {
-    paper: 1,
-    rock: 2,
-    scissors: 3,
+    paper: <PaperIcon />,
+    rock: <RockIcon />,
+    scissors: <ScissorsIcon />,
   };
 
   return (
@@ -25,7 +28,7 @@ const Play: React.FC<PlayProps> = ({
       isClickable={isClickable}
       onClick={() => onClick()}
     >
-      {plays[play] || ""}
+      {plays[play]}
     </S.Container>
   );
 };

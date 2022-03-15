@@ -1,4 +1,4 @@
-export const api = async () => {
+export const getMachineResult = async () => {
   const plays = {
     1: "paper",
     2: "rock",
